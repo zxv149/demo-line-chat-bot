@@ -35,4 +35,40 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'url' => [
+        'baHa' => env('BA_HA_URL', 'https://ani.gamer.com.tw/'),
+        'comic99770' => env('COMIC_99770_URL', 'http://99770.hhxxee.com/comic/'),
+        'twitch' => 'https://www.twitch.tv/',
+    ],
+    'api' => [
+        'twitch' => 'https://api.twitch.tv',
+    ],
+    'slack' => [
+        'channel' => '#general',
+        'username' => 'Jarvis',
+        'slash' => [
+            'secretary' => env('SLASH_TOKEN_SECRETARY'),
+        ],
+    ],
+    'aws' => [
+        'sms' => [
+            'key' => env('AWS_ACCESS_KEY_ID'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY'),
+            'region' => env('AWS_REGION'),
+            'from' => 'Tai',
+            'max_price_usd' => '0.5',
+        ]
+    ],
+    'bangumi' => [
+        'api_endpoint' => 'https://api.bgm.tv',
+        'app_id' => env('BGM_APP_ID'),
+        'secret' => env('BGM_SECRET'),
+    ],
+    'anime1' => [
+        'name' => 'Anime1.me 動畫線上看',
+        'endpoint' => 'https://anime1.me/',
+        'icon' => 'https://static.anime1.me/logo/260x260.png',
+        'image' => 'https://static.anime1.me/playerImg/5.jpg',
+    ],
+
 ];
